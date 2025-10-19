@@ -44,7 +44,6 @@ export const useAuthStore = create((set) => ({
       const res = await axios.get("https://sehat-k5dt.onrender.com/api/auth/checkAuth");
       set({ user: res.data.user });
     } catch (error) {
-      console.log("Check Auth Error:", error);
       set({
         user: null,
         err: error.response?.data?.message || "Unable to authenticate",
@@ -60,7 +59,6 @@ export const useAuthStore = create((set) => ({
       await axios.post("https://sehat-k5dt.onrender.com/api/auth/logout");
       set({ user: null });
     } catch (error) {
-      console.log("Logout Error:", error);
       set({ err: "Logout failed" });
     } finally {
       set({ loading: false });

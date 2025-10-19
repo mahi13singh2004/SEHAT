@@ -41,7 +41,6 @@ export const signup=async(req,res)=>{
         })
     }
     catch (error) {
-        console.log("Error in backend Signup",error)
         return res.status(500).json({message:"Internal Server Error"})    
     }
 }
@@ -68,7 +67,6 @@ export const login=async(req,res)=>{
         })
     }
     catch (error) {
-        console.log("Error in backend Login",error)
         return res.status(500).json({message:"Internal Server Error"})    
     }
 }
@@ -79,7 +77,6 @@ export const logout=async(req,res)=>{
         return res.status(200).json({message:"User Logged Out Successfully"})
     }
     catch (error) {
-        console.log("Error in backend Logout",error)
         return res.status(500).json({message:"Internal Server Error"})    
     }
 }
@@ -99,7 +96,6 @@ export const checkAuth=async(req,res)=>{
         })
     }
     catch (error) {
-        console.log("Error in backend Logout",error)
         return res.status(500).json({message:"Internal Server Error"})    
     }
 }
