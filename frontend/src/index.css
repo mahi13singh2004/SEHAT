@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Global dark background and typography */
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right,
+      #020617,
+      #0b1220,
+      #0f172a);
+  /* slate-950 → slate-900 → slate-800 */
+  color: #e2e8f0;
+  /* slate-200 for good contrast */
+}
+
+/* Ensure main app stretches to full height to avoid white gaps */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: smooth fonts for dark backgrounds */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom animations for loading spinner */
+@keyframes reverse-spin {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 1s linear infinite;
+}
