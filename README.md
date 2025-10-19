@@ -65,13 +65,14 @@ Sehat helps users book appointments, manage health records, talk to AI, and even
 ---
 
 # SnapShots
-![Image](https://drive.google.com/uc?export=view&id=1zd_N7VXubC2egrGEW1av_gopiNMYPJUv)
-![Image](https://drive.google.com/uc?export=view&id=1dBk9M5nMC8SKz5oAmjo0_DHge3ZbPq_a)
-![Image](https://drive.google.com/uc?export=view&id=1WI5Rnhv1doJgL2W3VmK0VZ-3C3jdTeg7)
-![Image](https://drive.google.com/uc?export=view&id=1XCIiQ5mo5-fjHQJuE__8WXsgPqAy0BNj)
-![Image](https://drive.google.com/uc?export=view&id=1S0LIK2_ouTdminePJdGU_hR2tnyofYes)
-![Image](https://drive.google.com/uc?export=view&id=19UPWDicqKUNe1lg4YTtVW7_VOoaF9drF)
-![Image](https://drive.google.com/uc?export=view&id=16WTLRo52qOeeQh620V4p7cP0IeWONYa2)
+![Image 1](https://drive.google.com/uc?export=view&id=1YGdRsG1Qrzfu62mBZZznOLayts8ii_mT)
+![Image 2](https://drive.google.com/uc?export=view&id=1YMKxPq6pBPX6coust6qsOeho63KRAeJv)
+![Image 3](https://drive.google.com/uc?export=view&id=1SFXq5eThk6dA1Mob_APIP8cYIbdwq-q8)
+![Image 4](https://drive.google.com/uc?export=view&id=1H3Fc3BHiC0-rO5DWzwoaH1WJFxa4AU-z)
+![Image 5](https://drive.google.com/uc?export=view&id=1gBNbLW-zPT8mTA3oT02u2N1kyOnD99Wo)
+![Image 6](https://drive.google.com/uc?export=view&id=1FKsjgKzkwgdy2_lyvrTIzmqQxW1gWYLc)
+![Image 7](https://drive.google.com/uc?export=view&id=1b_HmplaparjdNhY22dTrqcCiQeUAQfwh)
+![Image 8](https://drive.google.com/uc?export=view&id=1kPAcQYNktA2Gq051icMeALyW4xd6Tm2B)
 
 ## 🚀 Getting Started
 
