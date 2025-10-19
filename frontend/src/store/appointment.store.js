@@ -21,7 +21,7 @@ export const useAppointmentStore = create((set) => ({
     try {
       set({ loading: true });
       const res = await axios.post(
-        "http://localhost:5000/api/ai/recommendDoctor",
+        "https://sehat-k5dt.onrender.com/api/ai/recommendDoctor",
         { description }
       );
       set({ recommendedDoctor: res.data.doctor });
@@ -38,7 +38,7 @@ export const useAppointmentStore = create((set) => ({
   fetchManualDoctors: async () => {
     try {
       set({ loading: true });
-      const res = await axios.get("http://localhost:5000/api/list/doctors");
+      const res = await axios.get("https://sehat-k5dt.onrender.com/api/list/doctors");
       set({ manualDoctors: res.data.doctors });
     } catch (error) {
       set({ err: error.response?.data?.message || "Unable to get doctors" });
@@ -52,7 +52,7 @@ export const useAppointmentStore = create((set) => ({
     const { selectedDoctor, selectedTime } = useAppointmentStore.getState();
     try {
       set({ loading: true });
-      await axios.post("http://localhost:5000/api/appointment", {
+      await axios.post("https://sehat-k5dt.onrender.com/api/appointment", {
         doctorId: selectedDoctor._id,
         time: selectedTime,
         documentUrl: documentUrl || null,
@@ -72,7 +72,7 @@ export const useAppointmentStore = create((set) => ({
     try {
       set({ loading: true });
       const res = await axios.get(
-        "http://localhost:5000/api/appointment/patient"
+        "https://sehat-k5dt.onrender.com/api/appointment/patient"
       );
       set({ appointments: res.data.appointments });
     } catch (error) {
@@ -88,7 +88,7 @@ export const useAppointmentStore = create((set) => ({
     try {
       set({ loading: true });
       const res = await axios.get(
-        "http://localhost:5000/api/appointment/doctor"
+        "https://sehat-k5dt.onrender.com/api/appointment/doctor"
       );
       set({ appointments: res.data.appointments });
     } catch (error) {
@@ -104,11 +104,11 @@ export const useAppointmentStore = create((set) => ({
   updateAppointmentStatus: async (id, status) => {
     try {
       set({ loading: true });
-      await axios.put(`http://localhost:5000/api/appointment/update/${id}`, {
+      await axios.put(`https://sehat-k5dt.onrender.com/api/appointment/update/${id}`, {
         status,
       });
       const res = await axios.get(
-        "http://localhost:5000/api/appointment/doctor"
+        "https://sehat-k5dt.onrender.com/api/appointment/doctor"
       );
       set({ appointments: res.data.appointments });
     } catch (error) {

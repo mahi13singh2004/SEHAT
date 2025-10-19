@@ -15,7 +15,7 @@ export default function VaultPage() {
     useEffect(() => {
         const fetchFiles = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/api/vault/my-files", {
+                const res = await axios.get("https://sehat-k5dt.onrender.com/api/vault/my-files", {
                     withCredentials: true,
                 });
                 setUploads(res.data);
@@ -38,7 +38,7 @@ export default function VaultPage() {
                 const blob = new Blob([encrypted], { type: "text/plain" });
                 const formData = new FormData();
                 formData.append("file", blob, `encrypted_${file.name}.txt`);
-                const res = await axios.post("http://localhost:5000/api/vault/upload", formData, {
+                const res = await axios.post("https://sehat-k5dt.onrender.com/api/vault/upload", formData, {
                     withCredentials: true,
                 });
                 setUploads((prev) => [res.data, ...prev]);

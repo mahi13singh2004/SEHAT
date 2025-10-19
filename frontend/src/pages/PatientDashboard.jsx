@@ -54,7 +54,7 @@ const PatientDashboard = () => {
   const handleRate = async (appointmentId, rating) => {
     setSubmitting(true);
     try {
-      const res = await fetch('http://localhost:5000/api/appointment/rate', {
+      const res = await fetch('https://sehat-k5dt.onrender.com/api/appointment/rate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
