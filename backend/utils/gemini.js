@@ -5,7 +5,7 @@ dotenv.config()
 const genAI=new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
 
 export const gemini=async(description)=>{
-    const model = genAI.getGenerativeModel({ model: "models/gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "models/gemini-2.5-flash" });
     const prompt=`You are a advanced medical assistant. Given the patient symptoms, return the relevant medical specialization doctor needed to treat it. responsd with just one word-the spcialization nothig else. For example:
     -> "chest pain and shortness of breath" -> "Cardiologist"
     -> "Skin rashing and itching" -> "Dermatologist"
