@@ -12,14 +12,14 @@ const Home = () => {
     { img: feature1, title: 'Appointment Booking', desc: 'Book appointments effortlessly with top doctors.', route: '/book' },
     { img: feature4, title: 'Sehat Vault', desc: 'Securely store and access your medical records.', route: '/vault' },
     { img: feature6, title: 'CareMate', desc: 'AI-assisted healthcare guidance at your fingertips.', route: '/symptom' },
-    { img: bot1, title: 'SehatPal', desc: 'AI-powered nutrition coach for personalized diet plans.', route: '/track' },
+    { img: bot1, title: 'SehatPal', desc: 'AI-powered nutrition coach for personalized diet plans.', route: '/sehatpal' },
     { img: therapist, title: 'Therapist Finder', desc: 'Find qualified therapists near you with ease.', route: '/therapist-finder' }
   ]
 
   return (
     <>
       <div className='w-full min-h-[calc(100vh-5rem)] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100'>
-        {/* Hero */}
+
         <section className='w-full flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4 md:px-12 py-10 md:py-14'>
           <div className='w-full md:w-7/12'>
             <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>Care that meets you where you are</h1>
@@ -35,15 +35,12 @@ const Home = () => {
         </section>
 
 
-
-        {/* Features */}
         <section className='px-4 md:px-12 py-12 md:py-16'>
           <div className='text-center mb-12'>
             <h2 className='text-3xl md:text-4xl font-bold text-slate-100 mb-4'>Powerful Features</h2>
             <p className='text-slate-300 text-lg max-w-2xl mx-auto'>Everything you need to interact with your healthcare intelligently</p>
           </div>
 
-          {/* Features Grid */}
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto'>
             {features.map((feature, index) => (
               <Link to={feature.route} key={index} className='block group'>
@@ -60,10 +57,6 @@ const Home = () => {
         </section>
 
 
-
-
-
-        {/* CTA */}
         <section className='px-4 md:px-12 pb-12'>
           <div className='bg-slate-900/70 border border-slate-800 rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4'>
             <div>
