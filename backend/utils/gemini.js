@@ -14,8 +14,8 @@ export const gemini=async(description)=>{
 
     Symptoms:"${description}"
     `
+
     const result=await model.generateContent(prompt)
     const response=await result.response
-    console.log("ai response is",response.text().trim())
     return response.text().trim()
 }

@@ -31,7 +31,6 @@ export const createAppointment = async (req, res) => {
       .status(201)
       .json({ message: "Appointment Created Successfully", appointment });
   } catch (error) {
-    console.log("Error in creating appointment", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -47,7 +46,6 @@ export const getPatientAppointments = async (req, res) => {
       .status(200)
       .json({ message: "Patient Appointments fetched", appointments });
   } catch (error) {
-    console.log("Error in getting patient appointment", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -63,7 +61,6 @@ export const getDoctorAppointments = async (req, res) => {
       .status(200)
       .json({ message: "Doctor Appointments fetched", appointments });
   } catch (error) {
-    console.log("Error in getting doctor appointment", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -92,7 +89,6 @@ export const updateAppointmentStatus = async (req, res) => {
       appointment,
     });
   } catch (error) {
-    console.log("Error in updating appointment", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -139,7 +135,6 @@ export const rateDoctor = async (req, res) => {
       .status(200)
       .json({ message: "Doctor rated successfully", doctor });
   } catch (error) {
-    console.log("Error in rating doctor", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };

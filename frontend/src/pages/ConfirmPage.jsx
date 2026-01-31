@@ -60,7 +60,6 @@ const ConfirmPage = () => {
             navigate("/patient/dashboard")
         }
         catch (error) {
-            console.log(error)
         }
     }
 

@@ -19,7 +19,6 @@ const BookAppointment = () => {
             await fetchRecommendedDoctor(description)
         }
         catch (error) {
-            console.log(error)
         }
     }
 
@@ -28,7 +27,6 @@ const BookAppointment = () => {
             await fetchManualDoctors()
         }
         catch (error) {
-            console.log(error)
         }
     }
 

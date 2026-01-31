@@ -23,7 +23,6 @@ export const useAuthStore = create((set, get) => ({
       set({ backendConnected: false, user: null });
 
       if (error.code === 'ECONNABORTED' || error.code === 'ERR_NETWORK' || !error.response) {
-        console.log(`Backend connection attempt ${state.connectionAttempts + 1} failed, retrying...`);
         return false;
       }
 

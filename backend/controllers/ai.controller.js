@@ -11,7 +11,6 @@ export const recommendDoctor = async (req, res) => {
     }
 
     const specialization = await gemini(description);
-    console.log("Specialization received from Gemini:", specialization);
 
     const doctor = await User.findOne({
       role: "doctor",
@@ -40,7 +39,6 @@ export const fetchSymptom=async(req,res)=>{
       return res.status(400).json({message:"Please provide prompt"})
     }
     const response=await symptom(prompt)
-    console.log("Symptoms Recieved From Gemini:", response);
     return res.status(200).json({message:"Symptoms Fetched Successfully",response})
   } 
   catch (error) {

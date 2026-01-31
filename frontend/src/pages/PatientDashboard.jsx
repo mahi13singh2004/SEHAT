@@ -76,7 +76,6 @@ const PatientDashboard = () => {
       }
     } catch (e) {
       alert('Failed to rate');
-      console.log(e)
     } finally {
       setSubmitting(false);
     }

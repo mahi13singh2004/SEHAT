@@ -20,7 +20,6 @@ const DoctorDashboard = () => {
     try {
       await updateAppointmentStatus(id, status);
     } catch (error) {
-      console.log("Failed to update status:", error);
     }
   };
 
