@@ -97,11 +97,12 @@ export const useAuthStore = create((set, get) => ({
     try {
       set({ loading: true, err: null });
       await axios.post("https://sehat-k5dt.onrender.com/api/auth/logout");
-      set({ user: null });
     } catch (error) {
-      set({ err: "Logout failed" });
+      console.error("Logout error:", error);
+      // Even if backend logout fails, clear the user state locally
     } finally {
-      set({ loading: false });
+      // Always clear user state and loading regardless of backend response
+      set({ user: null, loading: false });
     }
   },
 }));
