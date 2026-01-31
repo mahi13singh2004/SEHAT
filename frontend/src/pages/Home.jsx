@@ -43,7 +43,6 @@ const Home = () => {
   return (
     <div className='w-full min-h-[calc(100vh-5rem)] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100'>
 
-      {/* Hero Section */}
       <section className='w-full flex flex-col items-center justify-center text-center px-4 md:px-12 py-16 md:py-24'>
         <div className='max-w-4xl mx-auto'>
           <h1 className='text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent'>
@@ -69,7 +68,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className='px-4 md:px-12 py-16'>
         <div className='max-w-7xl mx-auto'>
           <div className='text-center mb-16'>
@@ -101,7 +99,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className='px-4 md:px-12 py-16'>
         <div className='max-w-6xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
@@ -121,7 +118,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className='px-4 md:px-12 py-16'>
         <div className='max-w-4xl mx-auto'>
           <div className='bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 md:p-12 text-center'>
@@ -140,8 +136,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
       <footer className='px-4 md:px-12 py-12 border-t border-slate-800/50'>
         <div className='max-w-6xl mx-auto'>
           <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
