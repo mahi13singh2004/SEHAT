@@ -1,13 +1,9 @@
-import bot1 from '../assets/bot1.jpg'
-import bot2 from '../assets/bot2.jpg'
-
 const SehatPal = () => {
     const telegramBotLink = "https://t.me/sehat13102004_bot"
 
     return (
         <div className="w-full h-[calc(100vh-5rem)] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100 overflow-hidden">
             <div className="h-full flex">
-                {/* Left Side - Telegram Bot Link */}
                 <div className="w-1/2 flex flex-col items-center justify-center p-8 bg-slate-900/50 border-r border-slate-800">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">SehatBot</h1>
@@ -15,7 +11,6 @@ const SehatPal = () => {
                             SehatBot is your AI-powered personal nutrition coach that creates tailored diet plans to help you achieve your health goals effortlessly.
                         </p>
 
-                        {/* Large Telegram Icon */}
                         <div className="mb-8">
                             <a
                                 href={telegramBotLink}
@@ -61,7 +56,6 @@ const SehatPal = () => {
                     </div>
                 </div>
 
-                {/* Right Side - Bot Images */}
                 <div className="w-1/2 flex flex-col items-center justify-center p-8 bg-slate-900/30">
                     <div className="space-y-6 w-full max-w-md">
                         <div className="text-center mb-6">
@@ -69,22 +63,29 @@ const SehatPal = () => {
                             <p className="text-slate-400">Personalized diet plans powered by AI</p>
                         </div>
 
-                        {/* Bot Images */}
                         <div className="space-y-4">
-                            <div className="rounded-xl overflow-hidden border border-slate-800 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                                <img
-                                    src={bot1}
-                                    alt="SehatBot Interface 1"
-                                    className="w-full h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                />
+                            <div className="rounded-xl border border-slate-800 shadow-xl bg-slate-800/50 p-6 hover:bg-slate-800/70 transition-colors duration-300">
+                                <div className="flex items-center mb-3">
+                                    <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+                                    <h3 className="text-lg font-semibold">Smart Nutrition Analysis</h3>
+                                </div>
+                                <p className="text-slate-300 text-sm">Get instant nutritional insights and personalized meal recommendations</p>
                             </div>
 
-                            <div className="rounded-xl overflow-hidden border border-slate-800 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                                <img
-                                    src={bot2}
-                                    alt="SehatBot Interface 2"
-                                    className="w-full h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                />
+                            <div className="rounded-xl border border-slate-800 shadow-xl bg-slate-800/50 p-6 hover:bg-slate-800/70 transition-colors duration-300">
+                                <div className="flex items-center mb-3">
+                                    <div className="w-3 h-3 bg-indigo-500 rounded-full mr-3"></div>
+                                    <h3 className="text-lg font-semibold">Custom Diet Plans</h3>
+                                </div>
+                                <p className="text-slate-300 text-sm">Tailored meal plans based on your health goals and preferences</p>
+                            </div>
+
+                            <div className="rounded-xl border border-slate-800 shadow-xl bg-slate-800/50 p-6 hover:bg-slate-800/70 transition-colors duration-300">
+                                <div className="flex items-center mb-3">
+                                    <div className="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
+                                    <h3 className="text-lg font-semibold">24/7 Support</h3>
+                                </div>
+                                <p className="text-slate-300 text-sm">Always available to answer your nutrition questions and provide guidance</p>
                             </div>
                         </div>
                     </div>
