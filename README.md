@@ -74,72 +74,6 @@ Sehat helps users book appointments, manage health records, talk to AI, and even
 ![Image 7](https://drive.google.com/uc?export=view&id=1b_HmplaparjdNhY22dTrqcCiQeUAQfwh)
 ![Image 8](https://drive.google.com/uc?export=view&id=1kPAcQYNktA2Gq051icMeALyW4xd6Tm2B)
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher)
-- MongoDB (local or Atlas)
-- API keys for Gemini, Cloudinary, Pinata, and Telegram Bot
-- Git
-
-### Installation
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/sehat.git
-   ```
-2. Install backend dependencies:
-   ```bash
-   cd backend
-   npm install
-   ```
-3. Install frontend dependencies:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
-4. Create `.env` files:
-   - In `backend/`, add:
-     ```
-     MONGODB_URI=your_mongodb_uri
-     JWT_SECRET=your_jwt_secret
-     GEMINI_API_KEY=your_gemini_api_key
-     CLOUDINARY_URL=your_cloudinary_url
-     PINATA_API_KEY=your_pinata_api_key
-     ```
-   - In `frontend/`, add:
-     ```
-      VITE_GOOGLE_MAPS_API_KEY
-     ```
-5. Run the backend:
-   ```bash
-   cd backend
-   npm run dev
-   ```
-6. Run the frontend:
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-
----
-
-## 📂 Folder Structure
-```
-sehat/
-├── backend/
-│   ├── models/          # MongoDB schemas
-│   ├── routes/         # API routes
-│   ├── controllers/    # Route handlers
-│   └── utils/          # Telegram bot & utilities
-├── frontend/
-│   ├── components/     # Reusable React components
-│   ├── pages/          # Page components
-│   ├── store/          # Zustand state management
-│   └── assets/         # Static files (images, etc.)
-```
-
----
-
 ---
 
 ## 🧑‍💻 Author
@@ -153,7 +87,3 @@ Pull requests are welcome — just like healthy habits!
 If you’d like to add a feature, open an issue first to discuss it.
 
 ---
-
-## 🧘‍♂️ Fun Fact
-This app reminds you to take care of your health — so you don’t need to remember it yourself.  
-Let your brain rest. Let Sehat do the reminding 😌
