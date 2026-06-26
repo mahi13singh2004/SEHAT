@@ -41,7 +41,7 @@ const Home = () => {
   ]
 
   return (
-    <div className='w-full min-h-[calc(100vh-5rem)] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100'>
+    <div className='w-full min-h-[calc(100vh-5rem)] bg-black text-slate-100'>
 
       <section className='w-full flex flex-col items-center justify-center text-center px-4 md:px-12 py-16 md:py-24'>
         <div className='max-w-4xl mx-auto'>
@@ -118,37 +118,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='px-4 md:px-12 py-16'>
-        <div className='max-w-4xl mx-auto'>
-          <div className='bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-sm border border-slate-700/50 rounded-3xl p-8 md:p-12 text-center'>
-            <h3 className='text-3xl md:text-4xl font-bold text-slate-100 mb-4'>
-              Welcome to your health dashboard!
-            </h3>
-            <p className='text-slate-300 text-lg mb-8 max-w-2xl mx-auto'>
-              Access all your healthcare tools and manage your health journey with our AI-powered platform.
-            </p>
-            <Link
-              to='/patient/dashboard'
-              className='inline-block px-10 py-4 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'
-            >
-              Go to Dashboard
-            </Link>
-          </div>
-        </div>
-      </section>
-      <footer className='px-4 md:px-12 py-12 border-t border-slate-800/50'>
-        <div className='max-w-6xl mx-auto'>
-          <div className='flex flex-col md:flex-row items-center justify-between gap-4'>
-            <div className='flex items-center gap-2'>
-              <div className='w-8 h-8 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600'></div>
-              <span className='text-2xl font-bold text-slate-200'>SEHAT</span>
-            </div>
-            <div className='text-slate-400 text-sm'>
-              &copy; {new Date().getFullYear()} SEHAT. All rights reserved. Built with AI-powered healthcare technology.
-            </div>
-          </div>
-        </div>
-      </footer>
+
     </div>
   )
 }
